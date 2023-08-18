@@ -3,18 +3,22 @@ body {
     padding: 0;
 }
 
+p {
+    line-height: 1.65;
+}
+
 .container {
-    display: grid;
+    display: flex;
     margin: 0 auto;
     max-width: 1200px;
     min-height: 100vh;
-    place-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
-/* .paragraph-container {
-
-} */
-
-.paragraph {
-    line-height: 1.65;
+.title {
+    text-align: center;
 }
+
+
+
