@@ -4,13 +4,14 @@ body {
 }
 
 p {
+    margin-top: 0;
     line-height: 1.65;
 }
 
 .container {
     display: flex;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1600px;
     min-height: 100vh;
     flex-direction: column;
     justify-content: center;
@@ -19,6 +20,39 @@ p {
 .title {
     text-align: center;
 }
+
+.columns {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* .intro {
+    column-count: 3;
+} */
+
+.columns {
+    /* column-count: 3;
+    column-width: 250px; */
+
+    /* columns: 3 250px; */
+
+    columns: 250px 3;
+    /* column-rule: dotted #eee; */
+
+    /* column-rule: solid 8px blue; */
+    /* column-rule: thick inset blue; */
+
+    column-rule: 1px solid #eee;
+    column-gap: 5em;
+
+
+}
+
+.intro {
+    column-span: all;
+}
+
+
 
 
 
